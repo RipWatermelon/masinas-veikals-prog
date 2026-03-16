@@ -1,13 +1,13 @@
-package com.example.car_shop;
+package com.project.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarShopApplication {
+public class Carshopv2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CarShopApplication.class, args);
+		SpringApplication.run(Carshopv2Application.class, args);
 	}
 
 }

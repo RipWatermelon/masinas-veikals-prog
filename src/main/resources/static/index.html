@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Selling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Car Listings</h1>
+    <div id="listings-section">
+        <table id="listings-table">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Type</th><th>Insured</th><th>Condition</th><th>Year</th><th>Brand</th><th>Image</th><th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="showAddListingForm()">Add Listing</button>
+        <div id="add-listing-form" style="display:none;">
+            <input placeholder="Vehicle Type" id="vehicleType">
+            <input type="checkbox" id="isInsured"> Insured
+            <input placeholder="Condition" id="condition">
+            <input placeholder="Year" type="number" id="year">
+            <input placeholder="Brand" id="brand">
+            <input placeholder="Image Link" id="imageLink">
+            <button onclick="addListing()">Submit</button>
+            <button onclick="hideAddListingForm()">Cancel</button>
+        </div>
+    </div>
+    <h1>Orders</h1>
+    <div id="orders-section">
+        <table id="orders-table">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Phone</th><th>Address</th><th>Listing ID</th><th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="showAddOrderForm()">Add Order</button>
+        <div id="add-order-form" style="display:none;">
+            <input placeholder="Phone No" id="phoneNo">
+            <input placeholder="Address" id="address">
+            <input placeholder="Listing ID" type="number" id="orderListingID">
+            <button onclick="addOrder()">Submit</button>
+            <button onclick="hideAddOrderForm()">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
