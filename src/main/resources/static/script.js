@@ -1,3 +1,4 @@
+
 // Helper functions for showing/hiding forms
 function showAddListingForm() { document.getElementById('add-listing-form').style.display = 'block'; }
 function hideAddListingForm() { document.getElementById('add-listing-form').style.display = 'none'; }
