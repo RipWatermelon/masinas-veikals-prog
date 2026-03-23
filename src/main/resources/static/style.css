@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
 
     background: linear-gradient( beige, #1cc88a, beige);
-    background-size: 100% 100% 100%;
+    background-size: 100% 200% 100%;
 }
 
 
@@ -34,6 +34,7 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
     background: #fff;
+    border:
 }
 
 th, td {
