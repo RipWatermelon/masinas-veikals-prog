@@ -13,15 +13,16 @@ body {
     background-size: 100% 200%;
 }
 
-
 label {
     color: white;
 }
+
 h1 {
     color: #b3f36a;
     margin: 20px;
     cursor: pointer;
     border: #9ec970 5px solid;
+    animation: greenToBeige 8s ease-in-out infinite;
 }
 
 .background_Div {
@@ -105,4 +106,8 @@ button:hover {
     padding: 10px;
 }
 
-
+@keyframes greenToBeige {
+    0% { background-color: #b3f36a; }
+    50% { background-color: beige; }
+    100% { background-color: #b3f36a; }
+}

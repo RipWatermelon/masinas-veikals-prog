@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Selling Website</title>
+    <title>Auto Pārdošanas Vietne</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,48 +13,54 @@
     <hr style="width: 100%;"></hr>
 
     <div class="CarListings" id="listings-section">
-        <h1>Car Listings</h1>
+        <h1>Auto Sludinājumi</h1>
+
         <table id="listings-table">
             <thead>
             <tr>
-                <th>ID</th><th>Type</th><th>Insured</th><th>Condition</th><th>Year</th><th>Brand</th><th>Image</th><th>Remove</th>
+                <th>ID</th><th>Tips</th><th>Apdrošināts</th><th>Stāvoklis</th><th>Gads</th><th>Zīmols</th><th>Attēls</th><th>Noņemt</th>
             </tr>
             </thead>
             <tbody></tbody>
         </table>
-        <button onclick="showAddListingForm()">Add Listing</button>
+
+        <button onclick="showAddListingForm()">Pievienot Sludinājumu</button>
         <div id="add-listing-form" class="adding_Area">
-            <input placeholder="Vehicle Type" id="vehicleType">
-                <label for="isInsured">Insured</label>
+            <input placeholder="Transportlīdzekļa Tips" id="vehicleType">
+            <label for="isInsured">Apdrošināts</label>
             <input type="checkbox" id="isInsured">
-            <input placeholder="Condition" id="condition">
-            <input placeholder="Year" type="number" id="year">
-            <input placeholder="Brand" id="brand">
-            <input placeholder="Image Link" id="imageLink">
-            <button onclick="addListing()">Submit</button>
-            <button onclick="hideAddListingForm()">Cancel</button>
+            <input placeholder="Stāvoklis" id="condition">
+            <input placeholder="Gads" type="number" id="year">
+            <input placeholder="Zīmols" id="brand">
+            <input placeholder="Attēla Saite" id="imageLink">
+            <button onclick="addListing()">Iesniegt</button>
+            <button onclick="hideAddListingForm()">Atcelt</button>
         </div>
+
     </div>
 
 
     <div class="Orders" id="orders-section">
-        <h1>Orders</h1>
+        <h1>Pasūtījumi</h1>
+
         <table id="orders-table">
             <thead>
             <tr>
-                <th>ID</th><th>Phone</th><th>Address</th><th>Listing ID</th><th>Remove</th>
+                <th>ID</th><th>Tālrunis</th><th>Adrese</th><th>Sludinājuma ID</th><th>Noņemt</th>
             </tr>
             </thead>
             <tbody></tbody>
         </table>
-        <button onclick="showAddOrderForm()">Add Order</button>
+
+        <button onclick="showAddOrderForm()">Pievienot Pasūtījumu</button>
         <div id="add-order-form" class="adding_Area">
-            <input placeholder="Phone No" id="phoneNo">
-            <input placeholder="Address" id="address">
-            <input placeholder="Listing ID" type="number" id="orderListingID">
-            <button onclick="addOrder()">Submit</button>
-            <button onclick="hideAddOrderForm()">Cancel</button>
+            <input placeholder="Tālruņa Nr" id="phoneNo">
+            <input placeholder="Adrese" id="address">
+            <input placeholder="Sludinājuma ID" type="number" id="orderListingID">
+            <button onclick="addOrder()">Iesniegt</button>
+            <button onclick="hideAddOrderForm()">Atcelt</button>
         </div>
+
     </div>
 
     <hr style="width: 100%;"></hr>
