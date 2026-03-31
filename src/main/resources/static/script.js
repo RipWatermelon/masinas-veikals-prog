@@ -1,10 +1,11 @@
 
 // Helper functions for showing/hiding forms
-function showAddListingForm() { document.getElementById('add-listing-form').style.display = 'block'; }
+function showAddListingForm() { document.getElementById('add-listing-form').style.display = 'flex'; }
 function hideAddListingForm() { document.getElementById('add-listing-form').style.display = 'none'; }
-function showAddOrderForm() { document.getElementById('add-order-form').style.display = 'block'; }
+function showAddOrderForm() { document.getElementById('add-order-form').style.display = 'flex'; }
 function hideAddOrderForm() { document.getElementById('add-order-form').style.display = 'none'; }
-
+hideAddListingForm();
+hideAddOrderForm();
 // Fetch and render listings
 function fetchListings() {
     fetch('/api/listings/get-listing')

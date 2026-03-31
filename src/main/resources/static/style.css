@@ -14,7 +14,9 @@ body {
 }
 
 
-
+label {
+    color: white;
+}
 h1 {
     color: #b3f36a;
     margin: 20px;
@@ -82,6 +84,7 @@ button:hover {
 .adding_Area{
     display:flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .CarListings {
@@ -101,3 +104,5 @@ button:hover {
     margin: 25px;
     padding: 10px;
 }
+
+

@@ -25,7 +25,8 @@
         <button onclick="showAddListingForm()">Add Listing</button>
         <div id="add-listing-form" class="adding_Area">
             <input placeholder="Vehicle Type" id="vehicleType">
-            <input type="checkbox" id="isInsured"> Insured
+                <label for="isInsured">Insured</label>
+            <input type="checkbox" id="isInsured">
             <input placeholder="Condition" id="condition">
             <input placeholder="Year" type="number" id="year">
             <input placeholder="Brand" id="brand">
@@ -47,7 +48,7 @@
             <tbody></tbody>
         </table>
         <button onclick="showAddOrderForm()">Add Order</button>
-        <div id="add-order-form" style="display: none;">
+        <div id="add-order-form" class="adding_Area">
             <input placeholder="Phone No" id="phoneNo">
             <input placeholder="Address" id="address">
             <input placeholder="Listing ID" type="number" id="orderListingID">
