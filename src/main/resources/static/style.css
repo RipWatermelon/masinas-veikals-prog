@@ -21,7 +21,7 @@ h1 {
     margin: 20px;
     cursor: pointer;
     border: #9ec970 5px solid;
-    animation: greenToBeige 4s ease-in-out infinite;
+    animation: greenToBeige 1s ease-in-out infinite;
 }
 
 .background_Div {
